@@ -59,7 +59,8 @@ abline(h = 0, v = 0, col = "grey")
 legend("topright", legend = "cos(x)", col = "blue", lty = 1, pch = 1)
 save_plot("cos_modified")
 
-sink()
+sink();
+
 
 
 
