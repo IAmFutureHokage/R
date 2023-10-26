@@ -1,0 +1,17 @@
+> t = seq(0, 10, by = 0.1) 
+> y1 = 1.03*exp(-0.25*t)*sin(0.97*t) 
+> y2 = 1.07*exp(-0.35*t)*sin(0.94*t) 
+> y3 = 1.15*exp(-0.5*t)*sin(0.87*t) 
+> y4 = 0.45*(exp(-0.38*t) - exp(-2.62*t)) 
+> y5 = 0.22*(exp(-0.21*t) - exp(-4.80*t)) 
+> plot(t, y1, type = "n", main = "Oscillation") 
+> colors = c("blue", "red", "green", "cyan", "magenta") 
+> lines(t, y1, col = colors[1]) 
+> lines(t, y2, col = colors[2]) 
+> lines(t, y3, col = colors[3]) 
+> lines(t, y4, col = colors[4]) 
+> lines(t, y5, col = colors[5]) 
+> legends = paste("y", 1:5, sep = "") # —оздает вектор legends=(Уy1Ф, Уy2Ф, Уy3Ф, Уy4Ф, Уy5Ф)
+> legend(6, 0.6, legends, lty = "solid", col = colors) 
+> abline(h = 0) # √оризонтальна€ ось 
+> abline(v = 0) # ¬ертикальна€ ось

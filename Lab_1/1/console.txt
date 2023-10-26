@@ -1,0 +1,6 @@
+> getwd() # Получить текущую рабочую директорию
+[1] "C:/Users/doros/Desktop/R/Lab_1/1.1"
+> dir.create("R_work_directory") # Создать новую директорию
+> setwd("R_work_directory") # Сменить рабочую директорию на новую
+> list.files() # Показать файлы в текущей директории
+character(0)
