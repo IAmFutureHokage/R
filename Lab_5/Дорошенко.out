@@ -1,0 +1,162 @@
+
+	Shapiro-Wilk normality test
+
+data:  data$Height
+W = 0.92812, p-value = 0.2558
+
+
+	Shapiro-Wilk normality test
+
+data:  data$Weight
+W = 0.93504, p-value = 0.3241
+
+
+	Exact one-sample Kolmogorov-Smirnov test
+
+data:  data$Height
+D = 0.13147, p-value = 0.9277
+alternative hypothesis: two-sided
+
+
+	Exact one-sample Kolmogorov-Smirnov test
+
+data:  data$Weight
+D = 0.14296, p-value = 0.8775
+alternative hypothesis: two-sided
+
+$ci_mean
+[1] 170.1112 181.3554
+
+$ci_var
+[1]  55.2447 256.3517
+
+$ci_mean
+[1] 64.14022 73.19312
+
+$ci_var
+[1]  35.81053 166.17141
+
+$ci_mean
+BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+Based on 1000 bootstrap replicates
+
+CALL : 
+boot.ci(boot.out = boot(data, function(data, indices) mean(data[indices]), 
+    R = 1000), conf = level, type = "bca")
+
+Intervals : 
+Level       BCa          
+95%   (170.5, 179.9 )  
+Calculations and Intervals on Original Scale
+
+$ci_var
+BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+Based on 1000 bootstrap replicates
+
+CALL : 
+boot.ci(boot.out = boot(data, function(data, indices) var(data[indices]), 
+    R = 1000), conf = level, type = "bca")
+
+Intervals : 
+Level       BCa          
+95%   ( 65.8, 157.2 )  
+Calculations and Intervals on Original Scale
+Some BCa intervals may be unstable
+
+$ci_mean
+BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+Based on 1000 bootstrap replicates
+
+CALL : 
+boot.ci(boot.out = boot(data, function(data, indices) mean(data[indices]), 
+    R = 1000), conf = level, type = "bca")
+
+Intervals : 
+Level       BCa          
+95%   (64.47, 72.73 )  
+Calculations and Intervals on Original Scale
+
+$ci_var
+BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+Based on 1000 bootstrap replicates
+
+CALL : 
+boot.ci(boot.out = boot(data, function(data, indices) var(data[indices]), 
+    R = 1000), conf = level, type = "bca")
+
+Intervals : 
+Level       BCa          
+95%   ( 43.71, 104.05 )  
+Calculations and Intervals on Original Scale
+Some BCa intervals may be unstable
+
+$ci_mean
+[1] 167.9302 183.5365
+
+$ci_var
+[1]  46.07163 354.12232
+
+$ci_mean
+[1] 62.38421 74.94912
+
+$ci_var
+[1]  29.86439 229.54796
+
+$ci_mean
+BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+Based on 1000 bootstrap replicates
+
+CALL : 
+boot.ci(boot.out = boot(data, function(data, indices) mean(data[indices]), 
+    R = 1000), conf = level, type = "bca")
+
+Intervals : 
+Level       BCa          
+99%   (169.4, 182.0 )  
+Calculations and Intervals on Original Scale
+Some BCa intervals may be unstable
+
+$ci_var
+BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+Based on 1000 bootstrap replicates
+
+CALL : 
+boot.ci(boot.out = boot(data, function(data, indices) var(data[indices]), 
+    R = 1000), conf = level, type = "bca")
+
+Intervals : 
+Level       BCa          
+99%   ( 58.1, 166.1 )  
+Calculations and Intervals on Original Scale
+Warning : BCa Intervals used Extreme Quantiles
+Some BCa intervals may be unstable
+
+$ci_mean
+BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+Based on 1000 bootstrap replicates
+
+CALL : 
+boot.ci(boot.out = boot(data, function(data, indices) mean(data[indices]), 
+    R = 1000), conf = level, type = "bca")
+
+Intervals : 
+Level       BCa          
+99%   (63.70, 73.48 )  
+Calculations and Intervals on Original Scale
+Some BCa intervals may be unstable
+
+$ci_var
+BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+Based on 1000 bootstrap replicates
+
+CALL : 
+boot.ci(boot.out = boot(data, function(data, indices) var(data[indices]), 
+    R = 1000), conf = level, type = "bca")
+
+Intervals : 
+Level       BCa          
+99%   ( 37.24, 113.54 )  
+Calculations and Intervals on Original Scale
+Warning : BCa Intervals used Extreme Quantiles
+Some BCa intervals may be unstable
+

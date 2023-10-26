@@ -1,0 +1,16 @@
+Nickname Weight Height Clothing_Size Gender
+Stud1 68 175 M M
+Stud2 74 182 L M
+Stud3 58 162 S F
+Stud4 76 185 L M
+Stud5 65 170 M F
+Stud6 70 178 M M
+Stud7 60 165 S F
+Stud8 80 190 L M
+Stud9 72 180 M M
+Stud10 55 160 S F
+Stud11 78 188 L M
+Stud12 63 168 M F
+Stud13 77 186 L M
+Stud14 59 164 S F
+Stud15 75 183 L M
