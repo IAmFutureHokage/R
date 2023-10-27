@@ -6,14 +6,14 @@ library(boot)
 
 # Данные
 salary <- c(21, 19, 27, 11, 102, 25, 21)
-n <- length(salary)
-mean_salary <- mean(salary)
-var_salary <- var(salary)
+n <- length(salary) # Кол-во
+mean_salary <- mean(salary) # Среднее
+var_salary <- var(salary) # Дисперсия
 
 # 1.1 Доверительные интервалы для средней зарплаты
 
 # Параметрические доверительные интервалы
-se_salary <- sd(salary) / sqrt(n)
+se_salary <- sd(salary) / sqrt(n) # Стандартная ошибка
 ci_parametric_95_mean <- mean_salary + qt(c(0.025, 0.975), df=n-1) * se_salary
 ci_parametric_99_mean <- mean_salary + qt(c(0.005, 0.995), df=n-1) * se_salary
 
@@ -73,14 +73,13 @@ print(ks_test_height)
 print(ks_test_weight)
 
 # QQ-plot для роста
-qq_height <- qqnorm(data$Height, plot.it = FALSE)
-plot(qq_height$x, qq_height$y, main = "QQ-plot for Height", xlab = "Theoretical Quantiles", ylab = "Sample Quantiles")
-abline(0, 1, col = "red")
+qqnorm(data$Height, main = "QQ-plot for Height", xlab = "Theoretical Quantiles", ylab = "Sample Quantiles")
+qqline(data$Height, col = "red")
 
 # QQ-plot для веса
-qq_weight <- qqnorm(data$Weight, plot.it = FALSE)
-plot(qq_weight$x, qq_weight$y, main = "QQ-plot for Weight", xlab = "Theoretical Quantiles", ylab = "Sample Quantiles")
-abline(0, 1, col = "red")
+qqnorm(data$Weight, main = "QQ-plot for Weight", xlab = "Theoretical Quantiles", ylab = "Sample Quantiles")
+qqline(data$Weight, col = "red")
+
 
 # Задание 4
 

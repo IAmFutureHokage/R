@@ -14,8 +14,9 @@ plot(x, y, type = "s", main = "Ступеньки из точек")
 save_plot("staircase")
 
 # 1b. Автомобили 20-х годов
-plot(mtcars$wt, mtcars$mpg, main = "Автомобили 20-х годов", xlab = "Вес", ylab = "MPG")
-save_plot("cars_20s")
+plot(cars)
+title(main="автомобили 20-х годов") 
+save_plot("cars")
 
 # 1c. Trees
 plot(trees$Girth, trees$Volume, main = "Trees", xlab = "Girth", ylab = "Volume")
@@ -24,13 +25,13 @@ save_plot("trees")
 # 1d. tg(x), -1<=x<=1
 x <- seq(-1, 1, by = 0.01)
 y <- tan(x)
-plot(x, y, main = "tg(x), -1<=x<=1", xlab = "x", ylab = "tg(x)")
+plot(x, y, type = "l", main = "tg(x), -1<=x<=1", xlab = "x", ylab = "tg(x)")
 save_plot("tan")
 
 # 1e. cos(x), -2π<=x<= 2π
 x <- seq(-2*pi, 2*pi, by = 0.01)
 y <- cos(x)
-plot(x, y, main = "cos(x), -2π<=x<= 2π", xlab = "x", ylab = "cos(x)")
+plot(x, y, type = "l", main = "cos(x), -2π<=x<= 2π", xlab = "x", ylab = "cos(x)")
 save_plot("cos")
 
 # Загрузка данных и создание графика из файла "example of fine plot.txt"
@@ -54,12 +55,26 @@ abline(v = 0) # Вертикальная ось
 save_plot("fine_plot")
 
 # 3. Изменить оформление графика cos(x), -2π<=x<= 2π
-plot(x, y, type = "o", col = "blue", main = "cos(x), -2π<=x<= 2π", xlab = "x", ylab = "cos(x)")
+
+
+#interval <- 0.2
+#x_points <- seq(-2*pi, 2*pi, by = interval)
+#plot(x, y, type = "l", col = "blue", main = "cos(x), -2π<=x<= 2π", xlab = "x", ylab = "cos(x)")
+#abline(h = 0, v = 0, col = "grey")
+#points(x_points, cos(x_points), type = "p", col = "blue", pch = 1)
+#legend("topright", legend = "cos(x)", col = "blue", lty = 1, pch = 1)
+#save_plot("cos_modified")
+
+
+plot(x, y, type = "b", col = "blue", main = "cos(x), -2π<=x<= 2π", xlab = "x", ylab = "cos(x)")
 abline(h = 0, v = 0, col = "grey")
 legend("topright", legend = "cos(x)", col = "blue", lty = 1, pch = 1)
+#Сохраняем график
 save_plot("cos_modified")
 
 sink();
+
+
 
 
 
